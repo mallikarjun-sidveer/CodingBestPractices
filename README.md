@@ -35,11 +35,17 @@ when you are defining private variable you need to use (_),
 private string _name=”Mallikarjun”;
 
 Class         ->    PascalCase    ->    Class EmployeeInfo(){}
+
 Variables     ->    camelCase     ->    string employeeName = "Mallikarjun";
+
 Constructor   ->    PascalCase    ->    EmployeeInfo(){}
+
 Enum          ->    PascalCase    ->    enum EmployeeInfo(){}
+
 Arguments     ->    camelCase     ->    void AddEmployee(string employeeName, int employeeNumber){}
+
 Method        ->    PascalCase    ->    void AddEmployee(){}
+
 Constants     ->    PascalCase    ->    const int EmployeeSalary = 1000;
 
 #   Do Use Meaningful, descriptive words to name variables. Do not use abbreviations.
