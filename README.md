@@ -125,13 +125,21 @@ Constants     ->    PascalCase    ->    const int EmployeeSalary = 1000;
         }
         
 # Avoiding extra braces is also a practice to get into.
+  
   Avoid:
+        
         var count=10;
+        
         if(count>0)
+        
         {
+          
           count++;
+        
         }
+  
   Correct:
+        
         If(count>0) count++;
         
 
