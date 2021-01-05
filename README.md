@@ -25,14 +25,19 @@ The first characters of all words are Upper Case and other characters are lower 
 ii)CamelCase:
 The first letter is in lowercase and the first letter of every subsequent concatenated word is in caps.
 Example: employeeDetails
+
 To declare variable which returns single entity/object use the following convention,
-var employee=new Employee();
+  var employee=new Employee();
+
 To declare variable which return list of entities/objects, one needs to add suffix ‘s’ or ‘List’ to represent it as list of objects,
-var employees=new Employee();
+  var employees=new Employee();
+
 or
-var employeeList=new Employee();
+  var employeeList=new Employee();
+
 when you are defining private variable you need to use (_),
-private string _name=”Mallikarjun”;
+  private string _name=”Mallikarjun”;
+  
 
 Class         ->    PascalCase    ->    Class EmployeeInfo(){}
 
@@ -50,11 +55,16 @@ Constants     ->    PascalCase    ->    const int EmployeeSalary = 1000;
 
 #   Do Use Meaningful, descriptive words to name variables. Do not use abbreviations.
   Example:
+      
       # Correct:
+                
                 String employeeName;
+                
                 int employeeSalary;
-      # Avoid:
+     
+     # Avoid:                
                 String empname;
+                
                 Int sal;
 #   Do use PascalCasing for class names and method names.
     Public class Employee
@@ -71,9 +81,13 @@ Constants     ->    PascalCase    ->    const int EmployeeSalary = 1000;
       //Some code
     }
 #   Do not use Underscores in identifiers.
+    
     Correct:
+            
             EmployeeInfo employeeInfo;
+    
     Avoid:
+            
             EmployeeInfo employee_Info;
             
 #   Do prefix interfaces with the letter I.
@@ -122,19 +136,31 @@ Constants     ->    PascalCase    ->    const int EmployeeSalary = 1000;
         
 
 # C# Code Improvement Tips
+  
   -> Check Null and Empty condition.
+  
   -> Use ternary operator instead of if-else.
+  
   -> Use null coalescing operator.
+  
   -> Use object initialiser.
+  
   -> Use StringBuilder object to append strings, specially when string data is larger.
+ 
   -> Avoid use of type “var” variables, Create variables with known datatype if you know the datatype of right side of assignment.
   
 # Methods rules:
+  
   Small.
+  
   Do one thing.
+  
   Use descriptive names.
+  
   Prefer fewer arguments.
+  
   Have no side effects.
+  
   Split method into several independent methods that can be called easily.
   
 
