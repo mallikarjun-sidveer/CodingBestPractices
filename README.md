@@ -142,6 +142,34 @@ Constants     ->    PascalCase    ->    const int EmployeeSalary = 1000;
         
         If(count>0) count++;
         
+# Avoid Obsolete Comments
+Let us start with Obsolete Comments. According to **Robert C. Martin**:
+
+"_**A comment that has gotten old, irrelevant, and incorrect is obsolete.  Comments get old quickly.  It is best not to write a comment that will become obsolete.  If you find an obsolete comment, it is best to update it or get rid of it as quickly as possible.  Obsolete comments tend to migrate away from the code they once described.  They become floating islands of irrelevance and misdirection in the code.**_"
+
+This is topic create some interesting conversations among all level of developers. Try to avoid comments on individual method or short class. Because most comments i have ever seen is trying to describe the purpose/intentions. Some cases comments are meaningless. Developers writes comments to increase the readability & maintainability . Make sure your comments are not making any noise. It will be great if you could name a method more meaningful instead of comments. I am suggesting because method names are more affective than comments. Most of the comments are meaningless noise. 
+
+
+Let us check comments below:
+
+  //ensure that we are not exporting
+  
+  //deleted products
+  
+  if(product.IsDeleted && !product.IsExported )  
+  {  
+     ExportProducts = false;     
+  }
+
+  // This is a for loop that prints the 1 million times  
+  for (int i = 0; i < 1000000; i++)  
+  {  
+      Console.WriteLine(i);      
+  }
+  
+  
+  If we name the method like **CancelExportForDeletedProducts()** instead of comments what will happen? So, method names are more affective than comments. Methods execute and they are real. But comment is good for some cases like, when visual studio will take comments for creating an API documentation and those comments are different, you can use "///" for those comments so that other developers can get intelligence of API or Library. 
+  
 
 # C# Code Improvement Tips
   
@@ -170,6 +198,4 @@ Constants     ->    PascalCase    ->    const int EmployeeSalary = 1000;
   Have no side effects.
   
   Split method into several independent methods that can be called easily.
-  
-
   
