@@ -170,6 +170,8 @@ Let us check comments below:
   
   If we name the method like **CancelExportForDeletedProducts()** instead of comments what will happen? So, method names are more affective than comments. Methods execute and they are real. But comment is good for some cases like, when visual studio will take comments for creating an API documentation and those comments are different, you can use "///" for those comments so that other developers can get intelligence of API or Library. 
   
+# Avoid Unnecessary Regions in Class
+Regions are a feature of VS that allow you to surround blocks of code. It could be a single or multiple methods. The region exists because it is easier to navigate around the large file. The regions are used to hide ugly code or class that have exploded in size . _If a class does too many things it also violates the Single Responsibility Principle. So next time whenever you will think for adding a new region to your file take step back and ask that is it possible to separate your region into a separate class._
 
 # C# Code Improvement Tips
   
@@ -197,5 +199,10 @@ Let us check comments below:
   
   Have no side effects.
   
-  Split method into several independent methods that can be called easily.
+  **Split method into several independent methods that can be called easily.**
+  
+  According to Refactoring: **Improving the Design of Existing Code by Martin Fowler, Kent Beck (Contributor), John Brant (Contributor), William Opdyke, don Roberts** 
+
+_"Extract Method is one of the most common refactoring I do. I look at a method that is too long or look at code that needs a comment to understand its purpose. I then turn that fragment of code into its own method. I prefer short, well-named methods for several reasons. First, it increases the chances that other methods can use a method when the method is finely grained. Second, it allows the higher-level methods to read more like a series of comments. Overriding also is easier when the methods are finely grained. It does take a little getting used to if you are used to seeing larger methods. And small methods really work only when you have good names, so you need to pay attention to naming. People sometimes ask me what length I look for in a method. To me length is not the issue. The key is the semantic distance between the method name and the method body. If extracting improves clarity, do it, even if the name is longer than the code you have extracted."_
+
   
