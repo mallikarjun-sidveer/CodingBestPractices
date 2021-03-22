@@ -20,23 +20,32 @@ There are two types which you need to use for naming conventions:
 
 i)PascalCase:
 The first characters of all words are Upper Case and other characters are lower case. 
+
  Example: EmployeeDetails
+ 
 
 ii)CamelCase:
 The first letter is in lowercase and the first letter of every subsequent concatenated word is in caps.
+
 Example: employeeDetails
+
 
 To declare variable which returns single entity/object use the following convention,
   var employee=new Employee();
 
 To declare variable which return list of entities/objects, one needs to add suffix ‘s’ or ‘List’ to represent it as list of objects,
+
   var employees=new Employee();
 
 or
+
   var employeeList=new Employee();
+  
 
 when you are defining private variable you need to use (_),
+
   private string _name=”Mallikarjun”;
+  
   
 
 Class         ->    PascalCase    ->    Class EmployeeInfo(){}
@@ -53,6 +62,7 @@ Method        ->    PascalCase    ->    void AddEmployee(){}
 
 Constants     ->    PascalCase    ->    const int EmployeeSalary = 1000;
 
+
 #   Do Use Meaningful, descriptive words to name variables. Do not use abbreviations.
   Example:
       
@@ -66,6 +76,7 @@ Constants     ->    PascalCase    ->    const int EmployeeSalary = 1000;
                 String empname;
                 
                 Int sal;
+                
 #   Do use PascalCasing for class names and method names.
     Public class Employee
     {
