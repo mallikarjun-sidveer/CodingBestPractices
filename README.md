@@ -31,7 +31,9 @@ Example: employeeDetails
 
 
 To declare variable which returns single entity/object use the following convention,
+
   var employee=new Employee();
+  
 
 To declare variable which return list of entities/objects, one needs to add suffix ‘s’ or ‘List’ to represent it as list of objects,
 
