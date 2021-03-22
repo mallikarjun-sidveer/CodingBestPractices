@@ -49,6 +49,7 @@ when you are defining private variable you need to use (_),
   private string _name=”Mallikarjun”;
   
   
+**Naming Conventions**
 
 Class         ->    PascalCase    ->    Class EmployeeInfo(){}
 
