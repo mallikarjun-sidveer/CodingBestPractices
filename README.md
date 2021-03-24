@@ -4,7 +4,6 @@
   - For large projects, it helps to maintain the project for future developments changes.
   - To have it in readable format with proper spacing in code blocks.
   - To follow variable and method naming convention in accordance for what they do in logic.
-  - To follow commenting with each logical code blocks.
   - Helps in uniform problem solving.
   - Helps in quick code integration and new developer in team.
   - Saves money due to less man hours.
