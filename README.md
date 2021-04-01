@@ -6,7 +6,6 @@
   - To follow variable and method naming convention in accordance for what they do in logic.
   - Helps in uniform problem solving.
   - Helps in quick code integration and new developer in team.
-  - Saves money due to less man hours.
 
 
 # CodingBestPractices
