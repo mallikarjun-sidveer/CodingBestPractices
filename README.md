@@ -112,6 +112,7 @@ Constants     ->    PascalCase    ->    const int EmployeeSalary = 1000;
     public class Employee
     {
       Public static string employeeType;
+      
       Public string employeeName{get;set;};
       Public int employeeSalary{get;set};
       
@@ -123,14 +124,14 @@ Constants     ->    PascalCase    ->    const int EmployeeSalary = 1000;
     
  # To check for null or empty conditions, use the following:
       Avoid:
-        var employeeName=”testing”;
+        var employeeName = ”testing”;
         if(employeeName!=null && employeeName!=””)
         {
           //..
         }
         
     Correct:
-        var employeeName=”testing”;
+        var employeeName = ”testing”;
         if(!string.IsNullOrEmpty(employeeName))
         {
           //..
